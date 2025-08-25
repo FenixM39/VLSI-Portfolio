@@ -29,23 +29,7 @@ It is capable of executing a subset of RV32I instructions, including arithmetic,
 
 ---
 
-## Repository Structure
-.
-├── src/
-│ ├── rv32i_single_cycle.v # Top-level CPU module
-│ ├── regfile.v # Register file
-│ ├── alu.v # Arithmetic Logic Unit
-│ ├── control.v # Control unit
-│ ├── imm_gen.v # Immediate generator
-│ ├── branch_comp.v # Branch comparator
-│ ├── instr_mem.v # Instruction memory (ROM)
-│ ├── data_mem.v # Data memory (RAM)
-├── sim/
-│ ├── tb_rv32i.v # Testbench
-│ ├── prog.hex # Example program for simulation
-│ ├── data.hex # Example data memory initialization
-├── README.md
----
+
 
 ## Simulation
 
