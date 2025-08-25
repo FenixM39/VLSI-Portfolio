@@ -82,8 +82,8 @@ This portfolio reflects my hands-on experience in **Verilog, RTL Simulation, Syn
 
 - **Name**: Rahul Mehra  
 - **Institute**: Indian Institute of Technology (IIT) Delhi  
-- **Email**: [mehramehrarahul393@gmail.com]
-- **GitHub**: [https://github.com/FenixM39]
+- **Email**: mehramehrarahul393@gmail.com
+- **GitHub**: (https://github.com/FenixM39)
 - **LinkedIn**: [https://www.linkedin.com/in/rahul-mehra-71aba230b/]
 ---
 
