@@ -22,7 +22,7 @@ This portfolio reflects my hands-on experience in **Verilog, RTL Simulation, Syn
 
 ## 🔑 Skills
 
-- **HDL & Design Tools**: Verilog, SystemVerilog, ModelSim, Xilinx Vivado  
+- **HDL & Design Tools**: Verilog, Xilinx Vivado, OpenLane
 - **Programming**: C, Python, MATLAB  
 - **EDA Concepts**: RTL Coding, Testbench Design, Timing Analysis, Synthesis Basics  
 - **Physics & Devices**: Semiconductor Devices, Nanostructured Materials, MEMS  
