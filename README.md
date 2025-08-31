@@ -3,7 +3,7 @@
 📍 **M.Tech (Solid-State Materials), IIT Delhi**  
 🎯 **Aspiring VLSI / Semiconductor Engineer**  
 
-Welcome to my **VLSI Design Portfolio**, where I showcase my academic projects, design implementations, and research work in **Digital IC Design, RTL Coding, and Semiconductor Devices**.  
+Welcome to my **VLSI Design and Semiconductor Portfolio**, where I showcase my academic projects, design implementations, and research work in **Digital IC Design, RTL Coding, and Semiconductor Devices**.  
 This portfolio reflects my hands-on experience in **Verilog, RTL Simulation, Synthesis, and Digital Circuit Design**.
 
 ---
@@ -31,7 +31,7 @@ This portfolio reflects my hands-on experience in **Verilog, RTL Simulation, Syn
 
 ## 📂 Featured Projects
 
-### 🔹 8-bit ALU (Verilog)
+### 🔹 16-bit ALU (Verilog)
 - Designed and simulated an **8-bit Arithmetic Logic Unit** in Verilog.  
 - Supports arithmetic (ADD, SUB), logic (AND, OR, XOR), and shift operations.  
 - Verified using **testbench & waveform simulation** with VCD outputs.  

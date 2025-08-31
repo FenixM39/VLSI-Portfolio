@@ -1,0 +1,33 @@
+* 6T SRAM - Write Operation
+.param VDD=1.2 L=180n Wn=500n Wp=1u Wa=300n
+
+VDD vdd 0 {VDD}
+VWL wl 0 PULSE(0 {VDD} 20n 100p 100p 50n 200n)
+
+* Bitline sources for WRITE: BL=VDD, BLB=0 during WL pulse
+VBL  bl 0 PWL(0 0 10n 0 20n {VDD} 120n {VDD} 121n 0 200n 0)
+VBLB blb 0 PWL(0 {VDD} 10n {VDD} 20n 0 120n 0 121n {VDD} 200n {VDD})
+
+* Access transistors
+MNaccQ   q   wl  bl   0  NMOS L={L} W={Wa}
+MNaccQB  qb  wl  blb  0  NMOS L={L} W={Wa}
+
+* Cross-coupled inverters
+MPq  q  qb  vdd vdd PMOS L={L} W={Wp}
+MNq  q  qb  0   0   NMOS L={L} W={Wn}
+MPqb qb q   vdd vdd PMOS L={L} W={Wp}
+MNqb qb q   0   0   NMOS L={L} W={Wn}
+
+* Cap loads
+Cbl  bl  0 50f
+Cblb blb 0 50f
+Cq   q   0 2f
+Cqb  qb  0 2f
+
+* Models
+.model NMOS NMOS
+.model PMOS PMOS
+
+.tran 0 200n 0 100p
+.backanno
+.end

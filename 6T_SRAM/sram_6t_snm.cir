@@ -1,0 +1,24 @@
+* SNM Butterfly Curve - Inverter Transfer Characteristics
+.param VDD=1.2 L=180n Wn=500n Wp=1u
+
+VDD vdd 0 {VDD}
+
+* Input sweep sources
+VinA inA 0 0
+VinB inB 0 0
+
+* Inverter A
+MPA outA inA vdd vdd PMOS L={L} W={Wp}
+MNA outA inA 0   0   NMOS L={L} W={Wn}
+
+* Inverter B
+MPB outB inB vdd vdd PMOS L={L} W={Wp}
+MNB outB inB 0   0   NMOS L={L} W={Wn}
+
+.model NMOS NMOS
+.model PMOS PMOS
+
+* Sweep both inverters simultaneously
+.dc VinA 0 {VDD} 1m VinB 0 {VDD} 1m
+.backanno
+.end
